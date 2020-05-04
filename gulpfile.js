@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
+var minifycss = require('gulp-minify-css');
 
 
 gulp.task('hello', function(done){
@@ -18,3 +19,10 @@ gulp.task('browser-sync', function() {
     });
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
+
+// CSS Минимизация 
+gulp.task('css', function() {
+    return gulp.src('./css/*.css')
+      .pipe(minifycss())
+      .pipe(gulp.dest('./css'));
+  });
