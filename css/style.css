@@ -386,6 +386,9 @@ template {
   font-style: normal;
   font-display: wrap; }
 
+*, *:before, *:after {
+  box-zizing: border-box; }
+
 body {
   font-family: 'Futura Book', sans-serif;
   font-size: 14px; }
