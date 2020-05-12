@@ -599,15 +599,16 @@ img {
   .card__text {
     margin-left: 0; } }
 
-.design {
-  margin-bottom: 3.6rem; }
-  .design__text {
-    color: #131313;
-    text-transform: none;
-    margin: 1.4rem auto;
-    font-size: 1.386rem;
-    line-height: 1.92rem;
-    max-width: 53rem;
-    font-weight: normal;
-    font-family: 'FuturaBookC';
-    margin-bottom: 3rem; }
+.projects--dark {
+  background: linear-gradient(to bottom, white 50%, black 50%); }
+
+.design__text {
+  color: #131313;
+  text-transform: none;
+  margin: 1.4rem auto;
+  font-size: 1.386rem;
+  line-height: 1.92rem;
+  max-width: 53rem;
+  font-weight: normal;
+  font-family: 'FuturaBookC';
+  margin-bottom: 3rem; }
