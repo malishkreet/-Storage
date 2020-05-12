@@ -370,7 +370,7 @@ template {
     margin-left: 4.28rem; }
   .hero__text {
     font-size: 1.57rem;
-    max-width: 500px;
+    max-width: 35.715rem;
     line-height: 131%;
     margin: 0;
     margin-bottom: 3rem; }
@@ -598,3 +598,16 @@ img {
     margin-bottom: 5rem; }
   .card__text {
     margin-left: 0; } }
+
+.design {
+  margin-bottom: 3.6rem; }
+  .design__text {
+    color: #131313;
+    text-transform: none;
+    margin: 1.4rem auto;
+    font-size: 1.386rem;
+    line-height: 1.92rem;
+    max-width: 53rem;
+    font-weight: normal;
+    font-family: 'FuturaBookC';
+    margin-bottom: 3rem; }
