@@ -1,4 +1,6 @@
 .modal
+    opacity: 0
+    visibility: hidden
     position: fixed
     z-index: 199
     left: 0
@@ -11,6 +13,9 @@
     display: flex
     align-items: center
     justify-content: center
+    &--visible
+        opacity: 1
+        visibility: visible
     &__dialog
         position: relative
         background: $dark url('../img/bg-lines.svg') no-repeat center
@@ -26,7 +31,7 @@
         background: transparent url(../img/close.svg) center
         border: none
         margin: 12px
-        cursor: 
+        cursor: pointer
     &__title
         font-family: 'Yeseva One', cursive
         font-size: 1.357rem
@@ -44,3 +49,4 @@
         margin-bottom: 2.7rem
     &__button
         align-self: flex-end
+        padding: 12px 24px

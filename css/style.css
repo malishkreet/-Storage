@@ -344,7 +344,7 @@ template {
   margin-right: 45px; }
 
 .contacts__button {
-  padding: 11px 24px; }
+  padding: 12px 24px; }
 
 .hero {
   position: relative;
@@ -376,7 +376,7 @@ template {
     margin-bottom: 3rem; }
   .hero__button {
     margin-right: 17px;
-    padding: 20px 30px; }
+    padding: 20px 27px; }
   .hero__scroll-down {
     position: absolute;
     display: flex;
@@ -446,8 +446,7 @@ template {
     background-color: #E3B873;
     color: #fff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    transition: box-shadow 0.3s;
-    padding: 20px 25px; }
+    transition: box-shadow 0.3s; }
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
@@ -518,7 +517,7 @@ template {
   font-display: wrap; }
 
 *, *:before, *:after {
-  box-zizing: border-box; }
+  box-sizing: border-box; }
 
 html {
   font-size: 14px; }
@@ -655,6 +654,8 @@ img {
   margin-bottom: 3rem; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
@@ -667,6 +668,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
@@ -681,7 +685,8 @@ img {
     right: 0;
     background: transparent url(../img/close.svg) center;
     border: none;
-    margin: 12px; }
+    margin: 12px;
+    cursor: pointer; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
@@ -698,4 +703,5 @@ img {
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 12px 24px; }
