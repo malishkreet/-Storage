@@ -529,6 +529,19 @@ body {
 img {
   max-width: 100%; }
 
+.button-up {
+  position: relative;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  padding: 20px;
+  background: #fff url(../img/button-up.svg) no-repeat center/cover;
+  margin: 9rem 1rem;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  border-radius: 50%; }
+  .button-up:hover {
+    cursor: pointer; }
+
 .section {
   padding: 60px 0; }
   .section-title {
@@ -579,7 +592,10 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .button-up {
+    padding: 1px;
+    margin: 7rem 0.2rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
