@@ -27,7 +27,7 @@
  });
 
 
- /* (function(jq) {
+(function(jq) {
     jq.autoScroll = function(ops) {
       ops = ops || {};
       ops.styleClass = ops.styleClass || 'button-up';
@@ -67,4 +67,4 @@
    showDuration: 600, 
    hideDuration: 300
    });
-  }); */
+  });
