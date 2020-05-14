@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -349,7 +350,7 @@ template {
 .hero {
   position: relative;
   padding-top: 100px;
-  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  /** background: $dark url('../img/hero-bg.jpg') no-repeat center / cover  фон**/
   height: 100vh;
   color: #fff;
   display: flex;
@@ -536,10 +537,9 @@ img {
   width: 35px;
   height: 35px;
   padding: 20px;
-  background: #fff url(../img/button-up.svg) no-repeat center/cover;
+  background: #E3B873 url(../img/button-up.svg) no-repeat center/cover;
   margin: 9rem 1rem;
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-  border-radius: 50%; }
+  border-radius: 100%; }
   .button-up:hover {
     cursor: pointer; }
 
