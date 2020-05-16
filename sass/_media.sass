@@ -34,11 +34,22 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+        &::after
+            display: none
+            
     .button-up
         padding: 1px
         margin: 7rem 0.2rem
+
+
+
+
+
 @media screen and ( max-height: 520px )
     .hero
         &__scroll-down
             display: none
+@media screen and ( max-height: 450px )
+    .hero
+        height: 130vh
     

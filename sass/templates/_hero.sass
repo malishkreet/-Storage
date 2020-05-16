@@ -1,7 +1,7 @@
 .hero
     position: relative
     padding-top: 100px
-    /** background: $dark url('../img/hero-bg.jpg') no-repeat center / cover  фон**/
+    background: $dark url('../img/hero-bg.jpg') no-repeat center / cover
     height: 100vh
     color: $light
     display: flex
@@ -16,6 +16,15 @@
         background-color: rgba($dark, 0.7)
         top: 0
         left: 0
+    &::after
+        content: ''
+        width: 100%
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        height: 3.46rem
+        background-color: $dark
 
     &__content
         max-width: 47.85rem
@@ -34,6 +43,7 @@
     
     &__scroll-down
         position: absolute
+        z-index: 3
         display: flex
         justify-content: center
         align-items: center
