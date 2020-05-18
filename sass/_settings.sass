@@ -20,8 +20,7 @@ img
     border-radius: 100%
     &:hover
         cursor: pointer
-
-    
+   
         
 .section
     padding: 60px 0
@@ -33,13 +32,29 @@ img
         margin-bottom: 2.4rem
         &--left
             text-align: left
+        &--light
+            color: $light
         &__heading
             text-transform: uppercase
             font-family: 'Yeseva One', cursive
             line-height: 140%
-            font-size: 1.786rem
+            font-size: 1.4rem
             &--primary
                 color: $primary
+                font-size: 1.786rem
+        &__brop
+            text-transform: uppercase
+            font-size: 1.071rem
+            line-height: 1.5rem
+        &__world
+            display: flex
+            align-items: center
+            &::after
+                content: ''
+                width: 92px
+                height: 1px
+                background-color: $primary
+                margin-left: 6.2rem
         &__word
             display: flex
             align-items: center
