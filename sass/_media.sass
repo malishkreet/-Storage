@@ -20,6 +20,8 @@
     .col
         &-50
             width: 100%
+        &-35
+            width: 100%
 
     .types
         &__card 
@@ -56,24 +58,60 @@
             margin-bottom: 1.85rem
         &::after
             display: none
-            
+    
+    .types
+        margin-top: 40px       
     .button-up
         padding: 1px
         margin: 7rem 0.2rem
 
 
     .section
-        padding: 10px        
+        padding: 10px 0    
         &-title
             &__word
                 &::after
                     display: none
+    .projects
+        padding-bottom: 25rem
     .swiper
         &-container
             margin-bottom: 2.857rem
+            &-slide
+            min-height: auto
         &-wrapper
             margin: 0
             padding-bottom: 3.428rem
+        
+    .control
+        background-color: $dark 
+        color: $light
+        &__form
+            display: flex
+            flex-direction: column
+        &__video
+            min-height: auto
+        &__input 
+            &-group
+                margin: 20px 0
+        &__button
+            display: flex
+            order: 1
+            margin: 40px 0
+            justify-content: center
+            border-radius: 1px
+            margin-bottom: -28px
+        &__label
+            margin-bottom: -4px
+            
+        &__policy
+            margin-top: -1rem
+            display: flex
+            
+
+
+    
+    
         
 
 @media screen and ( max-height: 520px )
@@ -82,6 +120,8 @@
             display: none
     .section
         padding: 10px
+    .projects
+        padding-bottom: 30rem
 @media screen and ( max-height: 450px )
     .hero
         height: 130vh
