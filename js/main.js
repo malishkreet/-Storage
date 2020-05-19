@@ -48,6 +48,103 @@ $(document). ready(function() {
   new WOW().init();
 
 
+  // Валидация формы
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: "required",
+      // правило-объекта
+      userEmail: {
+        required: true,
+        email: true,
+      }
+    }, // сообщения
+  messages: {
+    userName:{
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв",
+      maxlength: "Имя не больше пятнадцати букв",
+    },
+    userPhone: "Телефон обязателен",
+    userEmail: {
+      required: "Обязательно укажите email",
+      email: "Введите в формате: name@domain.com",
+    }
+}
+
+});
+
+  // Маска для телефона
+
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___)___-__-__"});
+
+
+  // форма control
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: "required",
+    }, // сообщения
+  messages: {
+    userName:{
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв",
+      maxlength: "Имя не больше пятнадцати букв",
+    },
+    userPhone: "Телефон обязателен",
+}
+
+});
+
+
+
+
+    // Форма footer 
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: "required",
+      // правило-объекта
+      userQuestion: {
+        required: true,
+        minlength: 5,
+      }
+    }, // сообщения
+  messages: {
+    userName:{
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв",
+      maxlength: "Имя не больше пятнадцати букв",
+    },
+    userPhone: "Телефон обязателен",
+    userQuestion: {
+      required: "Обязательно укажите вопрос",
+      minlength: "Вопрос не короче пяти букв",
+    }
+}
+
+});
+
+
 });
 
 
