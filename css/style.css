@@ -403,7 +403,8 @@ input.invalid {
 
 .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
   margin: 0; }
 
 .col-50 {
@@ -859,7 +860,7 @@ img {
     max-width: 63.07rem;
     margin: auto;
     margin-top: -20rem;
-    margin-bottom: 3.714em;
+    margin-bottom: 2.4rem;
     padding: 2.5rem; }
   .footer__title {
     text-transform: uppercase;
@@ -897,12 +898,110 @@ img {
     background-color: #131313;
     padding: 4.14rem; }
 
+.contant {
+  max-width: 39rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .contant__info {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4250rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 1.75rem; }
+  .contant__icon {
+    padding: 0rem 0.55rem; }
+
+.map {
+  max-width: 66.071rem;
+  height: 33.214rem;
+  margin: 3.7rem auto;
+  margin-top: 2.5rem; }
+
+.info {
+  padding-left: 0.8rem;
+  margin: 0rem 1rem;
+  align-items: center; }
+
 .customers {
-  padding-bottom: 30rem; }
+  padding-top: 32rem;
+  padding-bottom: 26.5rem;
+  background-color: #fff; }
+  .customers__img {
+    border-radius: 50%;
+    margin-right: 1.7rem;
+    max-width: 5.4286rem;
+    height: 5.4286rem; }
+  .customers__text {
+    padding-top: 1rem;
+    padding-bottom: 2.714rem;
+    margin: auto;
+    font-size: 1.4285rem;
+    line-height: 1.929rem;
+    max-width: 25.714rem; }
+  .customers__info {
+    margin: 0px 20px 0px 30px;
+    max-width: 26.857rem; }
+  .customers__people {
+    display: flex; }
+    .customers__people--name {
+      font-family: 'Yeseva One';
+      font-size: 1.286rem;
+      line-height: 1.643rem;
+      font-style: normal;
+      font-weight: normal; }
+    .customers__people--text {
+      max-width: 23.30rem;
+      height: auto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.074rem;
+      line-height: 180%; }
+  .customers__stats {
+    background-color: #E3B873;
+    display: flex;
+    max-width: 20.982rem;
+    margin-top: 3rem;
+    margin-left: -1.6rem; }
+    .customers__stats--image {
+      padding: 0.25rem 1.2148rem; }
+    .customers__stats--quadrature {
+      align-items: center;
+      display: flex;
+      flex-basis: 45%;
+      color: #fff;
+      padding: 0.5rem 0rem;
+      border: 1px solid #fff;
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.114rem;
+      line-height: 1.714rem;
+      text-transform: uppercase; }
+    .customers__stats--day {
+      align-items: center;
+      display: flex;
+      flex-basis: 55%;
+      color: #fff;
+      padding: 0.5rem 0rem;
+      border: 1px solid #fff;
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.114rem;
+      line-height: 1.714rem;
+      text-transform: uppercase; }
 
 .team {
-  background: linear-gradient(to top, #fff 50%, #131313 50%);
-  padding-top: 38rem; }
+  padding-top: 38rem;
+  margin-bottom: -30rem; }
+  .team__workers {
+    max-width: 19.420rem; }
   .team__text {
     margin: auto;
     max-width: 32rem;
@@ -919,7 +1018,8 @@ img {
     margin: auto;
     font-size: 1.428rem;
     line-height: 2.428rem;
-    margin-bottom: 6.285rem; }
+    margin-bottom: 6.285rem;
+    color: #131313; }
     .team__information::before {
       content: '';
       display: block;
@@ -930,44 +1030,52 @@ img {
       background-color: #E3B873;
       border-radius: 30px; }
 
-.info__text {
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 16.643rem;
-  margin-top: -9.3rem;
-  background-color: #fff;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05); }
-
-.info__title {
-  font-family: 'Yeseva One', cursive;
-  padding-top: 1.571rem;
-  font-size: 1.285rem;
-  margin-top: 0;
-  margin-bottom: 0.7rem;
-  color: #131313; }
-
-.info__profession {
-  padding-bottom: 1.714rem;
-  color: #959595;
-  line-height: 1.857rem;
-  font-size: 1.285rem;
-  font-family: FuturaBookC;
-  font-style: normal;
-  font-weight: normal; }
-
-.info__experience {
-  background-color: #E3B873;
-  text-transform: uppercase;
-  padding: 1rem 2.03rem;
-  font-family: 'Yeseva One';
-  font-style: normal;
-  font-weight: normal; }
-
-.info__img {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+.workers {
+  margin: auto;
+  padding: 0px 0.357rem; }
+  .workers__text {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 16.643rem;
+    margin-top: -6rem;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05); }
+  .workers__title {
+    font-family: 'Yeseva One', cursive;
+    padding-top: 1.571rem;
+    font-size: 1.285rem;
+    margin-top: 0;
+    margin-bottom: -0.7rem;
+    color: #131313; }
+  .workers__profession {
+    padding-bottom: 1.714rem;
+    color: #959595;
+    line-height: 1.857rem;
+    font-size: 1.285rem;
+    font-family: FuturaBookC;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0.42rem; }
+  .workers__experience {
+    background-color: #E3B873;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    max-width: 16.642rem;
+    color: #fff;
+    max-width: 100%; }
+  .workers__img {
+    max-width: 100%; }
+  .workers__icon {
+    background-color: #E3B873;
+    max-width: 5rem;
+    padding: 0.9286rem 1rem;
+    margin: -2.5rem 0rem 0rem -2.5rem;
+    position: absolute;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -981,7 +1089,13 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .customers__people--text {
+    margin-bottom: 4rem;
+    height: 24.643rem; }
+  .customers__stats {
+    display: block;
+    margin-top: auto; } }
 
 @media screen and (max-width: 767px) {
   .row {
@@ -994,7 +1108,18 @@ img {
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .design-title {
+    color: #fff; }
+  .customers {
+    display: none; }
+  .team {
+    background-color: #131313;
+    margin-bottom: 20rem; }
+    .team__workers {
+      margin-bottom: 5.928rem; }
+    .team__information {
+      display: none; } }
 
 @media screen and (max-width: 570px) {
   html {
