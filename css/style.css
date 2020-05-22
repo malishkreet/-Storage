@@ -898,23 +898,23 @@ img {
     background-color: #131313;
     padding: 4.14rem; }
 
-.contant {
-  max-width: 39rem;
+.contact {
+  max-width: 36rem;
   margin: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-  .contant__info {
+  .contact__info {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: normal;
-    font-size: 1.4250rem;
+    font-size: 1.55rem;
     line-height: 2rem;
     text-align: center;
     text-transform: uppercase;
     color: #E3B873;
     margin-bottom: 1.75rem; }
-  .contant__icon {
+  .contact__icon {
     padding: 0rem 0.55rem; }
 
 .map {
@@ -1115,11 +1115,26 @@ img {
     display: none; }
   .team {
     background-color: #131313;
-    margin-bottom: 20rem; }
+    margin-bottom: 0; }
     .team__workers {
       margin-bottom: 5.928rem; }
     .team__information {
-      display: none; } }
+      display: none; }
+  .footer {
+    background: #131313; }
+    .footer__input-group {
+      flex-basis: 100%; }
+    .footer__wrap {
+      margin-top: 0;
+      padding: 0;
+      background-color: #131313; }
+    .footer__form {
+      max-width: 100%; }
+    .footer__button {
+      align-content: center; } }
+
+.policy__label--center {
+  justify-content: flex-start; }
 
 @media screen and (max-width: 570px) {
   html {
